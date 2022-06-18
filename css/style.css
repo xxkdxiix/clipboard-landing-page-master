@@ -301,7 +301,11 @@ footer .container ul li a:focus {
 
 footer .container {
     display: flex;
-    gap: 10em;
+    justify-content: space-between;
+}
+
+footer .container div:nth-child(1) {
+    flex-basis: 15vw;
 }
 
 
@@ -328,7 +332,7 @@ footer .container {
 footer .container .nav {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: repeat(3, 13vw);
+    grid-template-columns: repeat(3, 10vw);
     grid-template-areas:
         "one three five"
         "two four .";
